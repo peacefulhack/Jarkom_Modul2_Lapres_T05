@@ -147,6 +147,7 @@ Kemudian buka file semeruyyy.pw dan edit seperti gambar berikut dengan IP MALANG
 nano /etc/bind/jarkom/semeruyyy.pw
 ```
 ![screenshot][screenshot2]
+
 Restart bind9 dengan perintah
 ```
 service bind9 restart
@@ -352,3 +353,17 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [kelompok-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/
 [screenshot1]: images/screenshot1.png
 [screenshot2]: images/ss2.png
+[screenshot3]: images/ss3.png
+[screenshot4]: images/ss4.png
+[screenshot5]: images/ss5.png
+[screenshot6]: images/ss6.png
+[screenshot7]: images/ss7.png
+[screenshot8]: images/ss8.png
+[screenshot9]: images/ss9.png
+[screenshot10]: images/ss10.png
+[screenshot11]: images/ss11.png
+[screenshot12]: images/ss12.png
+[screenshot13]: images/ss13.png
+[screenshot14]: images/ss14.png
+[screenshot15]: images/ss15.png
+[screenshot16]: images/ss16.png
