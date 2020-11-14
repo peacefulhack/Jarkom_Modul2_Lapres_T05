@@ -29,10 +29,11 @@
     <img src="images/logo.gif" alt="Logo" width="180" height="180">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Nama dan NRP kelompok</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    M. Mikail Dwi K.    (05311840000028)
+    Dimas P. H.         (05311840000037)
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
