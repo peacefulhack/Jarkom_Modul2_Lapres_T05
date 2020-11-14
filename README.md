@@ -154,6 +154,7 @@ nano /etc/bind/jarkom/semeruyyy.pw
 ![screenshot][screenshot2]
 
 <br />
+
 Restart bind9 dengan perintah
 
 ```
@@ -203,25 +204,39 @@ zone "semeruyyy.pw" {
 };
 ```
 <br />
+
 ![screenshot][screenshot3]
+
 <br />
+
 Lakukan restart bind9
 
 ``service bind9 restart``
 
 membuat sub domain ``nano /etc/bind/jarkom/semerut05.pw`` tambahkan seperti gambar
 <br />
+
 ![screenshot][screenshot4]
+
 <br />
+
 lalu ``service bind9 restart``
 lalu coba ping apakah berhasil
+
 <br />
+
 ![screenshot][screenshot5]
+
 <br />
+
 setelah itu membuat delegasi sub-domain ``nano /etc/bind/jarkom/semerut05.pw`` pada malang
+
 <br />
+
 ![screenshot][screenshot2]
+
 <br />
+
 lalu ``service bind9 restart``
 
 ## Setting Web Service
@@ -232,57 +247,81 @@ lalu ``service bind9 restart``
 ### No 1
 
 pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
+
 <br />
+
 ![screenshot][screenshot6]
+
 <br />
 
 ### No 2
 
 pada soal pertama, kita disuruh membuat alias website dengan alamat http://www.semeruyyy.pw.
+
 <br />
+
 ![screenshot][screenshot7]
+
 <br />
 
 ### No 3
 
 pada soal pertama, kita disuruh membuat subdomain website dengan alamat http://penanjakan.semeruyyy.pw.
+
 <br />
+
 ![screenshot][screenshot8]
+
 <br />
 
 ### No 4
 
 Reverse Domain
+
 <br />
+
 ![screenshot][screenshot9]
+
 <br />
 
 ### No 5
 
 Slave DNS
+
 <br />
+
 ![screenshot][screenshot10]
+
 <br />
 
 ### No 6
 
 Subdomain delegasi
+
 <br />
+
 ![screenshot][screenshot11]
+
 <br />
 
 ### No 7
 
 Subdomain delegasi
+
 <br />
+
 ![screenshot][screenshot12]
+
 <br />
 
 ### No 8
 
 Subdomain delegasi
+
 <br />
+
 ![screenshot][screenshot12]
+
 <br />
 
 
