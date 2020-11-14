@@ -26,7 +26,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05">
-    <img src="images/logo.gif" alt="Logo" width="280" height="280">
+    <img src="images/logo.gif" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Nama dan NRP kelompok</h3>
