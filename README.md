@@ -110,11 +110,7 @@ xterm -T SIDOARJO -e linux ubd0=SIDOARJO,jarkom umid=SIDOARJO eth0=daemon,,,swit
 xterm -T GRESIK -e linux ubd0=GRESIK,jarkom umid=GRESIK eth0=daemon,,,switch1 mem=96M &
 ```
 lalu seting interfaces sesuai modul, sedangkan probolinggo mirip dengan malang namun menggunakan ip probolinggo. lalu melakukan ``iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16`` pada router suarabaya lalu melakukan export.
-## Jawaban
-<!-- GETTING STARTED -->
-### 1
 
-pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
 lakukan ``apt-get update`` pada UML malang, lalu install bind9 menggunakan command ``apt-get install bind9 -y``, pada uml yang sama, gunakan konfigurasi pada ``/etc/bind/named.conf.local`` untuk menambahkan
 ```
 zone "semeruyyy.pw" {
@@ -151,7 +147,46 @@ named -g //Bisa digunakan untuk restart sekaligus debugging
 Lalu membuat DNS Reverse(sesuai modul)
 
 Lalu agar kita dapat mengakses website menggunakan semeruyyy.pw dan tidak perlu mengetikkan IP maka kita menggunakan cname
+tambahkan, seperti gambar
+![screenshot][screenshot1]
+Kemudian restart bind9 dengan perintah
 
+service bind9 restart
+Lalu cek dengan melakukan ``host -t CNAME www.semeruyyy.pw`` atau ``ping www.semeruyyy.pw``. Hasilnya harus mengarah ke host dengan IP MALANG.
+
+untuk membuat dns slave, kita gunakan server malang ``nano /etc/bind/named.conf.local`` lalu tambahkan
+```
+zone "semeruyyy.pw" {
+    type master;
+    notify yes;
+    also-notify { "IP MOJOKERTO"; }; // Masukan IP MOJOKERTO tanpa tanda petik
+    allow-transfer { "IP MOJOKERTO"; }; // Masukan IP MOJOKERTO tanpa tanda petik
+    file "/etc/bind/jarkom/semeruyyy.pw";
+};
+```
+Lakukan restart bind9
+
+``service bind9 restart``
+
+lalu pada mojokerto, update package lists dengan menjalankan command:
+
+``apt-get update`` lalu ``apt-get install bind9 -y`` kemudian ``nano /etc/bind/named.conf.local`` tambahkan
+```
+zone "semeruyyy.pw" {
+    type slave;
+    masters { "IP MALANG"; }; // Masukan IP MALANG tanpa tanda petik
+    file "/var/lib/bind/semeruyyy.pw";
+};
+```
+Lakukan restart bind9
+
+``service bind9 restart``
+
+## Jawaban
+<!-- GETTING STARTED -->
+### 1
+
+pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
 
 ### Prerequisites
 
