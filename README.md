@@ -79,6 +79,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Soal
+<br />
 ![screenshot][screenshot1]
 <br />
 Semeru adalah salah satu gunung yang terkenal di Jawa Timur. Bibah adalah salah satu juru kunci Semeru. Bibah ingin menyebarkan keindahan Semeru pada dunia sehingga dia membeli 3 buah server yang berada di MALANG, MOJOKERTO dan PROBOLINGGO. Server MALANG akan digunakan sebagai DNS Server Master, MOJOKERTO akan digunakan sebagai DNS Server Slave dan PROBOLINGGO akan digunakan sebagai Web Server. Selain 3 server terdapat 2 klien yang digunakan untuk testing oleh Bibah yaitu GRESIK dan SIDOARJO. Untuk menyambungkan semua jaringan tersebut Bibah memberi router di SURABAYA. 
@@ -146,8 +147,9 @@ Kemudian buka file semeruyyy.pw dan edit seperti gambar berikut dengan IP MALANG
 ```
 nano /etc/bind/jarkom/semeruyyy.pw
 ```
+<br />
 ![screenshot][screenshot2]
-
+<br />
 Restart bind9 dengan perintah
 ```
 service bind9 restart
@@ -161,7 +163,9 @@ Lalu membuat DNS Reverse(sesuai modul)
 
 Lalu agar kita dapat mengakses website menggunakan semeruyyy.pw dan tidak perlu mengetikkan IP maka kita menggunakan cname
 tambahkan, seperti gambar
+<br />
 ![screenshot][screenshot2]
+<br />
 Kemudian restart bind9 dengan perintah
 
 service bind9 restart
@@ -191,20 +195,26 @@ zone "semeruyyy.pw" {
     file "/var/lib/bind/semeruyyy.pw";
 };
 ```
+<br />
 ![screenshot][screenshot3]
-
+<br />
 Lakukan restart bind9
 
 ``service bind9 restart``
 
 membuat sub domain ``nano /etc/bind/jarkom/semerut05.pw`` tambahkan seperti gambar
+<br />
 ![screenshot][screenshot4]
+<br />
 lalu ``service bind9 restart``
 lalu coba ping apakah berhasil
+<br />
 ![screenshot][screenshot5]
-
+<br />
 setelah itu membuat delegasi sub-domain ``nano /etc/bind/jarkom/semerut05.pw`` pada malang
+<br />
 ![screenshot][screenshot2]
+<br />
 lalu ``service bind9 restart``
 
 ## Setting Web Service
@@ -215,27 +225,37 @@ lalu ``service bind9 restart``
 ### No 1
 
 pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
+<br />
 ![screenshot][screenshot6]
+<br />
 
 ### No 2
 
 pada soal pertama, kita disuruh membuat alias website dengan alamat http://www.semeruyyy.pw.
+<br />
 ![screenshot][screenshot7]
+<br />
 
 ### No 3
 
 pada soal pertama, kita disuruh membuat subdomain website dengan alamat http://penanjakan.semeruyyy.pw.
+<br />
 ![screenshot][screenshot8]
+<br />
 
 ### No 4
 
 Reverse Domain
+<br />
 ![screenshot][screenshot9]
+<br />
 
 ### No 5
 
 Slave DNS
+<br />
 ![screenshot][screenshot10]
+<br />
 
 ### No 6
 
