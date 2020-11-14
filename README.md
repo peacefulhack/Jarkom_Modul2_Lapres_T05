@@ -36,14 +36,14 @@
     <br />
     Dimas P. H.         (05311840000037)
     <br />
-    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05#table-of-contents"><strong>View Table of Content »</strong></a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05#table-of-contents"><strong>Lihat Table of Content »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/tree/main/images">View Images</a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/tree/main/images">Gambar</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/pulse">Grafik</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/issues">Lihat issue</a>
   </p>
 </p>
 
