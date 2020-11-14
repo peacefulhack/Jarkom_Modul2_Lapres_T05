@@ -53,8 +53,8 @@
 ## Table of Contents
 
 * [Soal](#Soal)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
+* [Persiapan](#Persiapan)
+* [Jawaban](#Jawaban)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -68,6 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Soal
+[![screenshot][screenshot1]]
 Semeru adalah salah satu gunung yang terkenal di Jawa Timur. Bibah adalah salah satu juru kunci Semeru. Bibah ingin menyebarkan keindahan Semeru pada dunia sehingga dia membeli 3 buah server yang berada di MALANG, MOJOKERTO dan PROBOLINGGO. Server MALANG akan digunakan sebagai DNS Server Master, MOJOKERTO akan digunakan sebagai DNS Server Slave dan PROBOLINGGO akan digunakan sebagai Web Server. Selain 3 server terdapat 2 klien yang digunakan untuk testing oleh Bibah yaitu GRESIK dan SIDOARJO. Untuk menyambungkan semua jaringan tersebut Bibah memberi router di SURABAYA. 
 Kalian diminta untuk membuat sebuah website utama dengan (1) alamat http://semeruyyy.pw yang memiliki (2) alias http://www.semeruyyy.pw, dan (3) subdomain http://penanjakan.semeruyyy.pw yang diatur DNS-nya pada MALANG dan mengarah ke IP Server PROBOLINGGO serta dibuatkan (4) reverse domain untuk domain utama. Untuk mengantisipasi server dicuri/rusak, Bibah minta dibuatkan (5) DNS Server Slave pada MOJOKERTO agar Bibah tidak terganggu menikmati keindahan Semeru pada Website. Selain website utama Bibah juga meminta dibuatkan (6) subdomain dengan alamat http://gunung.semeruyyy.pw yang didelegasikan pada server MOJOKERTO dan mengarah ke IP Server PROBOLINGGO. Bibah juga ingin memberi petunjuk mendaki gunung semeru kepada anggota komunitas sehingga dia meminta dibuatkan (7) subdomain dengan nama 
 http://naik.gunung.semeruyyy.pw, domain ini diarahkan ke IP Server PROBOLINGGO. 
@@ -84,17 +85,12 @@ Untuk web http://gunung.semeruyyy.pw belum dapat dikonfigurasi pada web server k
 Saat Bibah mengunjungi IP PROBOLINGGO, yang muncul bukan web utama http://semeruyyy.pw melainkan laman default Apache yang bertuliskan “It works!”. (16) Karena dirasa kurang profesional, maka setiap Bibah mengunjungi IP PROBOLINGGO akan dialihkan secara otomatis ke http://semeruyyy.pw. (17) Karena pengunjung pada 
 /var/www/penanjakan.semeruyyy.pw/public/images sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
 
+## Persiapan
+Sebelum mejawab pertanyaan no 1, kita harus membuat topologi yang benar,
 
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
-
+## Jawaban
 <!-- GETTING STARTED -->
-## Getting Started
+### 1
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
@@ -196,4 +192,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [stars-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/stargazers
 [kelompok-shield]: https://img.shields.io/badge/Kelompok-T05-blue
 [kelompok-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/
-[product-screenshot]: images/screenshot.png
+[screenshot1]: images/screenshot.png
