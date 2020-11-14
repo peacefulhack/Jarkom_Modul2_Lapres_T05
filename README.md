@@ -148,6 +148,10 @@ ATAU
 named -g //Bisa digunakan untuk restart sekaligus debugging
 ```
 
+Lalu membuat DNS Reverse(sesuai modul)
+
+Lalu agar kita dapat mengakses website menggunakan semeruyyy.pw dan tidak perlu mengetikkan IP maka kita menggunakan cname
+
 
 ### Prerequisites
 
