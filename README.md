@@ -114,8 +114,40 @@ lalu seting interfaces sesuai modul, sedangkan probolinggo mirip dengan malang n
 <!-- GETTING STARTED -->
 ### 1
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
+lakukan ``apt-get update`` pada UML malang, lalu install bind9 menggunakan command ``apt-get install bind9 -y``, pada uml yang sama, gunakan konfigurasi pada ``/etc/bind/named.conf.local`` untuk menambahkan
+```
+zone "semeruyyy.pw" {
+	type master;
+	file "/etc/bind/jarkom/semeruyyy.pw";
+};
+```
+Buat folder jarkom di dalam /etc/bind
+
+```
+mkdir /etc/bind/jarkom
+```
+
+Copykan file db.local pada path /etc/bind ke dalam folder jarkom yang baru saja dibuat dan ubah namanya menjadi semeruyyy.pw
+
+```
+cp /etc/bind/db.local /etc/bind/jarkom/semeruyyy.pw
+```
+
+Kemudian buka file semeruyyy.pw dan edit seperti gambar berikut dengan IP MALANG masing-masing kelompok:
+
+```
+nano /etc/bind/jarkom/semeruyyy.pw
+```
+Restart bind9 dengan perintah
+```
+service bind9 restart
+
+ATAU
+
+named -g //Bisa digunakan untuk restart sekaligus debugging
+```
+
 
 ### Prerequisites
 
