@@ -36,7 +36,7 @@
     <br />
     Dimas P. H.         (05311840000037)
     <br />
-    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05#table-of-contents"><strong>Lihat Table of Content »</strong></a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05#daftar-isi"><strong>Lihat Daftar Isi »</strong></a>
     <br />
     <br />
     <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/tree/main/images">Gambar</a>
@@ -50,30 +50,30 @@
 
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+## Daftar Isi
 
 * [Soal](#Soal)
 * [Persiapan](#Persiapan)
   * [Setting Topologi](#Setting_Topologi)
   * [Setting DNS](#Setting_DNS)
 * [Jawaban](#Jawaban)
-  * [No 1](#No_1)
-  * [No 2](#No_2)
-  * [No 3](#No_3)
-  * [No 4](#No_4)
-  * [No 5](#No_5)
-  * [No 6](#No_6)
-  * [No 7](#No_7)
-  * [No 8](#No_8)
-  * [No 9](#No_9)
-  * [No 10](#No_10)
-  * [No 11](#No_11)
-  * [No 12](#No_12)
-  * [No 13](#No_13)
-  * [No 14](#No_14)
-  * [No 15](#No_15)
-  * [No 16](#No_16)
-  * [No 17](#No_17)
+  * [No 1](#No-1)
+  * [No 2](#No-2)
+  * [No 3](#No-3)
+  * [No 4](#No-4)
+  * [No 5](#No-5)
+  * [No 6](#No-6)
+  * [No 7](#No-7)
+  * [No 8](#No-8)
+  * [No 9](#No-9)
+  * [No 10](#No-10)
+  * [No 11](#No-11)
+  * [No 12](#No-12)
+  * [No 13](#No-13)
+  * [No 14](#No-14)
+  * [No 15](#No-15)
+  * [No 16](#No-16)
+  * [No 17](#No-17)
 
 
 
