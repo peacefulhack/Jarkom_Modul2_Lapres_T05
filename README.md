@@ -54,8 +54,8 @@
 
 * [Soal](#Soal)
 * [Persiapan](#Persiapan)
-  * [Setting Topologi](#Setting_Topologi)
-  * [Setting DNS](#Setting_DNS)
+  * [Setting Topologi](#Setting-Topologi)
+  * [Setting DNS](#Setting-DNS)
 * [Jawaban](#Jawaban)
   * [No 1](#No-1)
   * [No 2](#No-2)
