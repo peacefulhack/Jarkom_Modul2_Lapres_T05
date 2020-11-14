@@ -19,14 +19,14 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
-
+[![Kelompok][kelompok-shield]][kelompok-url]
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05">
-    <img src="images/logo.gif" alt="Logo" width="80" height="80">
+    <img src="images/logo.gif" alt="Logo" width="180" height="180">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -189,4 +189,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [contributors-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/graphs/contributors
 [stars-shield]: https://img.shields.io/packagist/stars/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
 [stars-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/stargazers
+[kelompok-shield]: https://img.shields.io/badge/Kelompok-T05-blue
+[kelompok-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/
 [product-screenshot]: images/screenshot.png
