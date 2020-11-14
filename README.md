@@ -54,24 +54,26 @@
 
 * [Soal](#Soal)
 * [Persiapan](#Persiapan)
+  * [Setting Topologi](#Setting_Topologi)
+  * [Setting DNS](#Setting_DNS)
 * [Jawaban](#Jawaban)
-  * [No 1](#1)
-  * [No 2](#2)
-  * [No 3](#3)
-  * [No 4](#4)
-  * [No 5](#5)
-  * [No 6](#6)
-  * [No 7](#7)
-  * [No 8](#8)
-  * [No 9](#9)
-  * [No 10](#10)
-  * [No 11](#11)
-  * [No 12](#12)
-  * [No 13](#13)
-  * [No 14](#14)
-  * [No 15](#15)
-  * [No 16](#16)
-  * [No 17](#17)
+  * [No 1](#No_1)
+  * [No 2](#No_2)
+  * [No 3](#No_3)
+  * [No 4](#No_4)
+  * [No 5](#No_5)
+  * [No 6](#No_6)
+  * [No 7](#No_7)
+  * [No 8](#No_8)
+  * [No 9](#No_9)
+  * [No 10](#No_10)
+  * [No 11](#No_11)
+  * [No 12](#No_12)
+  * [No 13](#No_13)
+  * [No 14](#No_14)
+  * [No 15](#No_15)
+  * [No 16](#No_16)
+  * [No 17](#No_17)
 
 
 
@@ -96,6 +98,7 @@ Saat Bibah mengunjungi IP PROBOLINGGO, yang muncul bukan web utama http://semeru
 /var/www/penanjakan.semeruyyy.pw/public/images sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
 
 ## Persiapan
+### Setting Topologi
 Sebelum mejawab pertanyaan no 1, kita harus membuat topologi yang benar, buka xming dan putty, lalu buka openvpn connect, pertama konekkan vpn menggunakan .ovpn yang diberi asisten, lalu gunakan putty logi menggunakan IP pada modul sesuai kelompok, lalu buat topologi.sh menggunakan 
 ```bash
 nano topologi.sh
@@ -119,12 +122,12 @@ xterm -T SIDOARJO -e linux ubd0=SIDOARJO,jarkom umid=SIDOARJO eth0=daemon,,,swit
 xterm -T GRESIK -e linux ubd0=GRESIK,jarkom umid=GRESIK eth0=daemon,,,switch1 mem=96M &
 ```
 lalu seting interfaces sesuai modul, sedangkan probolinggo mirip dengan malang namun menggunakan ip probolinggo. lalu melakukan ``iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16`` pada router suarabaya lalu melakukan export.
-
+### Setting DNS
 lakukan ``apt-get update`` pada UML malang, lalu install bind9 menggunakan command ``apt-get install bind9 -y``, pada uml yang sama, gunakan konfigurasi pada ``/etc/bind/named.conf.local`` untuk menambahkan
 ```
-zone "semeruyyy.pw" {
+zone "semerut05.pw" {
 	type master;
-	file "/etc/bind/jarkom/semeruyyy.pw";
+	file "/etc/bind/jarkom/semerut05.pw";
 };
 ```
 Buat folder jarkom di dalam /etc/bind
@@ -133,17 +136,17 @@ Buat folder jarkom di dalam /etc/bind
 mkdir /etc/bind/jarkom
 ```
 
-Copykan file db.local pada path /etc/bind ke dalam folder jarkom yang baru saja dibuat dan ubah namanya menjadi semeruyyy.pw
+Copykan file db.local pada path /etc/bind ke dalam folder jarkom yang baru saja dibuat dan ubah namanya menjadi semerut05.pw
 
 ```
 cp /etc/bind/db.local /etc/bind/jarkom/semeruyyy.pw
 ```
 
 Kemudian buka file semeruyyy.pw dan edit seperti gambar berikut dengan IP MALANG masing-masing kelompok:
-
 ```
 nano /etc/bind/jarkom/semeruyyy.pw
 ```
+![screenshot][screenshot2]
 Restart bind9 dengan perintah
 ```
 service bind9 restart
@@ -157,7 +160,7 @@ Lalu membuat DNS Reverse(sesuai modul)
 
 Lalu agar kita dapat mengakses website menggunakan semeruyyy.pw dan tidak perlu mengetikkan IP maka kita menggunakan cname
 tambahkan, seperti gambar
-![screenshot][screenshot1]
+![screenshot][screenshot2]
 Kemudian restart bind9 dengan perintah
 
 service bind9 restart
@@ -187,15 +190,68 @@ zone "semeruyyy.pw" {
     file "/var/lib/bind/semeruyyy.pw";
 };
 ```
+![screenshot][screenshot3]
+
 Lakukan restart bind9
 
 ``service bind9 restart``
 
+membuat sub domain ``nano /etc/bind/jarkom/semerut05.pw`` tambahkan seperti gambar
+![screenshot][screenshot4]
+lalu ``service bind9 restart``
+lalu coba ping apakah berhasil
+![screenshot][screenshot5]
+
+setelah itu membuat delegasi sub-domain ``nano /etc/bind/jarkom/semerut05.pw`` pada malang
+![screenshot][screenshot2]
+lalu ``service bind9 restart``
+
+## Setting Web Service
+
+
 ## Jawaban
 <!-- GETTING STARTED -->
-### 1
+### No 1
 
 pada soal pertama, kita disuruh membuat website dengan alamat http://semeruyyy.pw.
+![screenshot][screenshot6]
+
+### No 2
+
+pada soal pertama, kita disuruh membuat alias website dengan alamat http://www.semeruyyy.pw.
+![screenshot][screenshot7]
+
+### No 3
+
+pada soal pertama, kita disuruh membuat subdomain website dengan alamat http://penanjakan.semeruyyy.pw.
+![screenshot][screenshot8]
+
+### No 4
+
+Reverse Domain
+![screenshot][screenshot9]
+
+### No 5
+
+Slave DNS
+![screenshot][screenshot10]
+
+### No 6
+
+Subdomain delegasi
+![screenshot][screenshot11]
+
+### No 7
+
+Subdomain delegasi
+![screenshot][screenshot12]
+
+### No 8
+
+Subdomain delegasi
+![screenshot][screenshot12]
+
+
 
 ### Prerequisites
 
@@ -295,3 +351,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [kelompok-shield]: https://img.shields.io/badge/Kelompok-T05-blue
 [kelompok-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/
 [screenshot1]: images/screenshot1.png
+[screenshot2]: images/ss2.png
