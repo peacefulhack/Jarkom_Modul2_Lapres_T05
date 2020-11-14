@@ -33,12 +33,13 @@
 
   <p align="center">
     M. Mikail Dwi K.    (05311840000028)
+    <br />
     Dimas P. H.         (05311840000037)
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05#table-of-contents"><strong>View Table of Content »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/tree/main/images">View Images</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
