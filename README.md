@@ -80,7 +80,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Soal
 <br />
+
 ![screenshot][screenshot1]
+
 <br />
 Semeru adalah salah satu gunung yang terkenal di Jawa Timur. Bibah adalah salah satu juru kunci Semeru. Bibah ingin menyebarkan keindahan Semeru pada dunia sehingga dia membeli 3 buah server yang berada di MALANG, MOJOKERTO dan PROBOLINGGO. Server MALANG akan digunakan sebagai DNS Server Master, MOJOKERTO akan digunakan sebagai DNS Server Slave dan PROBOLINGGO akan digunakan sebagai Web Server. Selain 3 server terdapat 2 klien yang digunakan untuk testing oleh Bibah yaitu GRESIK dan SIDOARJO. Untuk menyambungkan semua jaringan tersebut Bibah memberi router di SURABAYA. 
 Kalian diminta untuk membuat sebuah website utama dengan (1) alamat http://semeruyyy.pw yang memiliki (2) alias http://www.semeruyyy.pw, dan (3) subdomain http://penanjakan.semeruyyy.pw yang diatur DNS-nya pada MALANG dan mengarah ke IP Server PROBOLINGGO serta dibuatkan (4) reverse domain untuk domain utama. Untuk mengantisipasi server dicuri/rusak, Bibah minta dibuatkan (5) DNS Server Slave pada MOJOKERTO agar Bibah tidak terganggu menikmati keindahan Semeru pada Website. Selain website utama Bibah juga meminta dibuatkan (6) subdomain dengan alamat http://gunung.semeruyyy.pw yang didelegasikan pada server MOJOKERTO dan mengarah ke IP Server PROBOLINGGO. Bibah juga ingin memberi petunjuk mendaki gunung semeru kepada anggota komunitas sehingga dia meminta dibuatkan (7) subdomain dengan nama 
@@ -148,9 +150,12 @@ Kemudian buka file semeruyyy.pw dan edit seperti gambar berikut dengan IP MALANG
 nano /etc/bind/jarkom/semeruyyy.pw
 ```
 <br />
+
 ![screenshot][screenshot2]
+
 <br />
 Restart bind9 dengan perintah
+
 ```
 service bind9 restart
 
@@ -164,7 +169,9 @@ Lalu membuat DNS Reverse(sesuai modul)
 Lalu agar kita dapat mengakses website menggunakan semeruyyy.pw dan tidak perlu mengetikkan IP maka kita menggunakan cname
 tambahkan, seperti gambar
 <br />
+
 ![screenshot][screenshot2]
+
 <br />
 Kemudian restart bind9 dengan perintah
 
@@ -260,17 +267,23 @@ Slave DNS
 ### No 6
 
 Subdomain delegasi
+<br />
 ![screenshot][screenshot11]
+<br />
 
 ### No 7
 
 Subdomain delegasi
+<br />
 ![screenshot][screenshot12]
+<br />
 
 ### No 8
 
 Subdomain delegasi
+<br />
 ![screenshot][screenshot12]
+<br />
 
 
 
