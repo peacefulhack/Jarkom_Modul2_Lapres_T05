@@ -340,7 +340,7 @@ Buka file ```/etc/apache2/sites-available/penanjakan.semerut05.pw``` dan tambahk
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
 [contributors-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/graphs/contributors
-[stars-shield]: https://img.shields.io/packagist/stars/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
 [stars-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/stargazers
 [kelompok-shield]: https://img.shields.io/badge/Kelompok-T05-blue
 [kelompok-url]: https://github.com/peacefulhack/Jarkom_Modul2_Lapres_T05/
