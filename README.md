@@ -341,6 +341,17 @@ folder sebagai berikut:
 
 <br />
 
+### No 11
+
+Pada folder /public dibolehkan directory listing namun untuk folder yang berada di dalamnya
+tidak dibolehkan.
+
+<br />
+
+![screenshot][screenshot14]
+
+<br />
+
 ### No 12
 Pindah direktori ```/var/www/penanjakan.semerut05.pw``` dan membuat file ```.htaccess``` dengan mengketik kan ```nano /var/www/penanjakan.semerut05.pw``` lalu membuat file ```.htaccess``` yang berisi ```ErrorDocument 403 /errors/404.html```
 ![Screenshot (185)](https://user-images.githubusercontent.com/55182072/99162300-ce6a8b80-272e-11eb-97e0-a8a8f6ab8f11.png)
