@@ -324,6 +324,23 @@ Subdomain delegasi
 
 <br />
 
+### No 10
+Web http://penanjakan.semeruyyy.pw akan digunakan untuk menyimpan assets file yang
+
+memiliki DocumentRoot pada /var/www/penanjakan.semeruyyy.pw dan memiliki struktur
+folder sebagai berikut:
+* /var/www/penanjakan.semeruyyy.pw
+  * /public/javascripts
+  * /public/css
+  * /public/images
+  * /errors
+
+<br />
+
+![screenshot][screenshot13]
+
+<br />
+
 ### No 12
 Pindah direktori ```/var/www/penanjakan.semerut05.pw``` dan membuat file ```.htaccess``` dengan mengketik kan ```nano /var/www/penanjakan.semerut05.pw``` lalu membuat file ```.htaccess``` yang berisi ```ErrorDocument 403 /errors/404.html```
 ![Screenshot (185)](https://user-images.githubusercontent.com/55182072/99162300-ce6a8b80-272e-11eb-97e0-a8a8f6ab8f11.png)
