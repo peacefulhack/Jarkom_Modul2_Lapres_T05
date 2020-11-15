@@ -324,8 +324,15 @@ Subdomain delegasi
 
 <br />
 
+### No 12
+Pindah direktori ```/var/www/penanjakan.semerut05.pw``` dan membuat file ```.htaccess``` dengan mengketik kan ```nano /var/www/penanjakan.semerut05.pw``` lalu membuat file ```.htaccess``` yang berisi ```ErrorDocument 403 /errors/404.html```
+![Screenshot (185)](https://user-images.githubusercontent.com/55182072/99162300-ce6a8b80-272e-11eb-97e0-a8a8f6ab8f11.png)
 
+Lalu selanjutnya, buka file ```/etc/apache2/sites-available/penanjakan.semerut05.pw``` dan tambahkan
+![Screenshot (186)](https://user-images.githubusercontent.com/55182072/99162321-0a055580-272f-11eb-9955-15c3b95f0a1e.png)
 
+ Setelah itu restart apache2 dengan coomand ```service apache2 restart```
+ 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
