@@ -333,6 +333,9 @@ Lalu selanjutnya, buka file ```/etc/apache2/sites-available/penanjakan.semerut05
 
  Setelah itu restart apache2 dengan coomand ```service apache2 restart```
  
+### No 13
+Buka file ```/etc/apache2/sites-available/penanjakan.semerut05.pw``` dan tambahkan konfigurasi ```Alias "/js" "/var/www/penanjakan.semerut05.pw/public/javascripts"```
+ 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/peacefulhack/Jarkom_Modul2_Lapres_T05?style=flat-square
